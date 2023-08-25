@@ -1,4 +1,3 @@
-280	 137.8
 #include<stdio.h>
 #include<unistd.h>
 
