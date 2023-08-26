@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    float f, c;
+int main()
+{
+    float k, c;
     int low, up, step;
 
     low = 0;
@@ -10,12 +11,12 @@ int main() {
 
     c = low;
     printf("Esta es la tabla de conversiones entre temperaturas\n");
-    printf("Celsius\tFahrenheit\n");  
+    printf("Celsius\tKelvin\n");  
     while (c <= up) {
-        f = (c * 1.8) + 32;  
-        printf("%3.0f\t%6.1f\n", c, f);
+        k = c + 273.15;  
+        printf("%3.0f\t%6.2f\n", c, k);
         c = c + step;
     }
 
-    return 0;  
+    return 0;
 }
