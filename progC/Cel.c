@@ -1,22 +1,21 @@
-#include<stdio.h>
-#include<unistd.h>
+#include <stdio.h>
 
-int main (){
+int main() {
+    float f, c;
+    int low, up, step;
 
-        float f, c;
-        int low, up, step;
+    low = 0;
+    up = 300;
+    step = 10;
 
-        low = 32;
-        up = 300;
-        step = 10;
+    c = low;
+    printf("Esta es la tabla de conversiones entre temperaturas\n");
+    printf("Celsius\tFahrenheit\n");  
+    while (c <= up) {
+        f = (c * 1.8) + 32;  
+        printf("%3.0f\t%6.1f\n", c, f);
+        c = c + step;
+    }
 
-        f = low;
-        printf("Esta es la tabla de conversiones entre temperaturas\n");
-        
-	while (f <= up)
-	{
-        	c  = (c *9/5) + 32;
-        	printf("%3.0f\t%6.1f\n", f, c);
-        	f = f + step;
-        }
+    return 0;  
 }
