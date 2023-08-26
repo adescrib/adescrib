@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int kel_cel()
 {
     float k, c;
     int low, up, step;

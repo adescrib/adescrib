@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<unistd.h>
 
-int main (){
+int fahr_cel (){
 
 	float f, c;
 	int low, up, step;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int cel_fahr ()) {
     float f, c;
     int low, up, step;
 
