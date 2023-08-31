@@ -1,0 +1,9 @@
+/Users/adrianescribano/Desktop/adescrib/hello-rust/target/debug/deps/textwrap-501c909a1e6e5f02.rmeta: /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/lib.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/indentation.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/splitting.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/adrianescribano/Desktop/adescrib/hello-rust/target/debug/deps/textwrap-501c909a1e6e5f02.d: /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/lib.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/indentation.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/splitting.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core.rs /Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/lib.rs:
+/Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/indentation.rs:
+/Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/splitting.rs:
+/Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core.rs:
+/Users/adrianescribano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/textwrap-0.13.4/src/core/optimal_fit.rs:
