@@ -3,75 +3,23 @@
 #include <string.h>
 #include "user.h"
 
-int getAlphabetPosition(char letter) {
-    if (letter >= 'a' && letter <= 'z') {
-        return letter - 'a' + 1;
-    } else if (letter >= 'A' && letter <= 'Z') {
-        return letter - 'A' + 1;
-    } else {
-        // Caracter no válido
-        return 0;
+void getAsciiValues(const char *str, int *asciiValues) {
+    int i = 0;
+    while (str[i] != '\0') {
+        asciiValues[i] = (int)str[i];
+        i++;
     }
+    asciiValues[i] = '\0'; // Agregar un valor nulo al final del arreglo
 }
+
 void createUser(struct User users[], int *userCount, const char *username, const char *password) {
-    if (*userCount >= MAX_USERS) {
-        printf("No se pueden crear más usuarios.\n");
-        return;
-    }
-
-    // Verificar si el usuario ya existe
-    for (int i = 0; i < *userCount; i++) {
-        if (strcmp(users[i].username, username) == 0) {
-            printf("El usuario ya existe.\n");
-            return;
-        }
-    }
-
-    // Construir una cadena con los números entre asteriscos
-    char formattedUsername[200];
-    char formattedPassword[200];
-
-    int usernameLength = strlen(username);
-    int passwordLength = strlen(password);
-
-    for (int i = 0; i < usernameLength; i++) {
-        if (i != 0) {
-            strcat(formattedUsername, "*");
-        }
-        int positionValue = getAlphabetPosition(username[i]);
-        sprintf(formattedUsername + strlen(formattedUsername), "%d", positionValue);
-    }
-
-    for (int i = 0; i < passwordLength; i++) {
-        if (i != 0) {
-            strcat(formattedPassword, "*");
-        }
-        int positionValue = getAlphabetPosition(password[i]);
-        sprintf(formattedPassword + strlen(formattedPassword), "%d", positionValue);
-    }
-
-    // Copiar la cadena formateada al usuario
-    strcpy(users[*userCount].username, formattedUsername);
-    strcpy(users[*userCount].password, formattedPassword);
-
-    (*userCount)++;
-    printf("Usuario creado exitosamente.\n");
-
-    // Guardar usuarios en el archivo en el nuevo formato
-    saveUsersToFile(users, *userCount);
-}
-
-void listUsers(const struct User users[], int userCount) {
-    if (userCount == 0) {
-        printf("No hay usuarios creados.\n");
-        return;
-    }
-
-    printf("Usuarios creados:\n");
-    for (int i = 0; i < userCount; i++) {
-        printf("Usuario: %s\n", users[i].username);
+    if (*userCount < 100) { // Supongamos un límite máximo de 100 usuarios
+        strcpy(users[*userCount].username, username);
+        strcpy(users[*userCount].password, password);
+        (*userCount)++;
     }
 }
+
 char convertPositionToChar(int positionValue) {
     if (positionValue >= 1 && positionValue <= 26) {
         // Valor en el rango [1, 26], corresponde a las letras minúsculas 'a'-'z'
